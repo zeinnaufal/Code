@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+</head>
+<body>
+
+    <h2>Form Pendaftaran</h2>
+
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td><label for="username">Username</label></td>
+                <td>: <input type="text" id="username" name="username" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td>: <input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td>: <input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Nomor Telepon</label></td>
+                <td>: <input type="tel" id="phone" name="phone" required></td>
+            </tr>
+            <tr>
+                <td><label for="website">Website/URL</label></td>
+                <td>: <input type="url" id="website" name="website" required></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>: 
+                    <input type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-laki" required>
+                    <label for="laki-laki">Laki-laki</label>
+                    <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" required>
+                    <label for="perempuan">Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="alamat">Alamat</label></td>
+                <td>: <textarea id="alamat" name="alamat" rows="3" cols="30" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="jurusan">Jurusan</label></td>
+                <td>: 
+                    <select id="jurusan" name="jurusan" required>
+                        <option value="PGSD">PGSD</option>
+                        <option value="RPL">RPL</option>
+                        <option value="Tekkom">Tekkom</option>
+                        <option value="PMM">PMM</option>
+                        <option value="PAUD">PAUD</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="tanggal">Tanggal & Waktu</label></td>
+                <td>: <input type="datetime-local" id="tanggal" name="tanggal" required></td>
+            </tr>
+            <tr>
+                <td><label for="warna">Pilih Warna Favorit</label></td>
+                <td>: <input type="color" id="warna" name="warna"></td>
+            </tr>
+            <tr>
+                <td><label for="penilaian">Penilaian (1-5)</label></td>
+                <td>: 
+                    <input type="number" id="penilaian" name="penilaian" min="1" max="5" required>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="kepuasan">Kepuasan</label></td>
+                <td>: 
+                    <input type="range" id="kepuasan" name="kepuasan" min="0" max="100">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <br>
+                    <button type="submit">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
