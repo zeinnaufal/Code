@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Registrasi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+            max-width: 400px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-top: 15px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .login-link {
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Halaman Registrasi</h2>
+    <form action="register_process.php" method="POST" enctype="multipart/form-data">
+        <label for="fullname">Nama Lengkap:</label>
+        <input type="text" id="fullname" name="fullname" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="6" required>
+        
+        <label for="confirm_password">Konfirmasi Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required>
+        
+        <label for="photo">Foto Profil:</label>
+        <input type="file" id="photo" name="photo" accept="image/*" required>
+        
+        <button type="submit">Daftar</button>
+    </form>
+    <div class="login-link">
+        <p>Sudah punya akun? <a href="index.html">Login di sini</a></p>
+    </div>
+</body>
+</html>
