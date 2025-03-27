@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Beranda - Fotoin</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #ffffff;
+      padding: 15px 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #e60023;
+    }
+
+    nav a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .hero {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: #ffe5ec;
+    }
+
+    .hero h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 16px;
+    }
+
+    .features {
+      padding: 30px 20px;
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .feature-card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .feature-card h3 {
+      margin-top: 0;
+    }
+
+    .quick-links {
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .quick-links button {
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 8px;
+      background-color: #e60023;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">FOTO.in</div>
+  <nav>
+    <a href="#">Beranda</a>
+    <a href="#">Galeri</a>
+    <a href="#">Tentang</a>
+    <a href="#">Kontak</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Selamat Datang di FOTO.in</h1>
+  <p>Temukan, simpan, dan bagikan ide menarik dari berbagai kategori.</p>
+</section>
+
+<section class="features">
+  <div class="feature-card">
+    <h3>🔍 Jelajahi Gambar</h3>
+    <p>Telusuri berbagai gambar menarik dari berbagai kategori dan minat.</p>
+  </div>
+  <div class="feature-card">
+    <h3>📥 Unduh Gambar</h3>
+    <p>Unduh gambar favoritmu secara instan untuk digunakan kapan saja.</p>
+  </div>
+  <div class="feature-card">
+    <h3>🔗 Bagikan ke Teman</h3>
+    <p>Bagikan gambar via link atau media sosial seperti WhatsApp.</p>
+  </div>
+  <div class="feature-card">
+    <h3>🚩 Laporkan Konten</h3>
+    <p>Laporkan konten yang tidak pantas untuk menjaga komunitas tetap aman.</p>
+  </div>
+</section>
+
+<!-- bagian tombol cepat -->
+<section class="quick-links">
+  <h2>Akses Cepat</h2>
+  <a href="galeri.html"><button>📸 Galeri Gambar</button></a>
+  <a href link="upload.html"><button>⬆️ Unggah Gambar</button></a>
+  <a href link="about.html"><button>ℹ️ Tentang Kami</button></a>
+</section>
+
+
+<script>
+  function goTo(page) {
+    alert("Menuju ke: " + page);
+    // window.location.href = page; // aktifkan jika sudah punya halaman lain
+  }
+</script>
+
+</body>
+</html>
